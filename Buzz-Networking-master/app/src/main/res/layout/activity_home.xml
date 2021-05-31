@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#894fd4"
+    tools:context="exodiasolutions.buzz.HomeActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#d1d1d1"
+    android:layout_height="wrap_content">
+
+    />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_image"
+        android:layout_width="45dp"
+        fresco:fadeDuration="600"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/user"
+        fresco:roundingBorderWidth="1dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"
+        fresco:roundingBorderColor="#3DBDFF"
+        android:layout_height="45dp"
+        fresco:roundAsCircle="true"
+        fresco:placeholderImage="@drawable/add_photo"
+        />
+
+    <exodiasolutions.buzz.Custom.TV_heading
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUNNY NARANG"
+        android:id="@+id/name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textSize="22sp"
+        />
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="logout"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logout"
+        />
+
+</LinearLayout>
+    <exodiasolutions.buzz.Custom.TV_normaltext
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeds"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="exodiasolutions.muskaanfoundation.common.ViewAttendanceGrid">
+
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressbar"
+            android:layout_centerInParent="true"/>
+        <exodiasolutions.buzz.Loader.CircleRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:AniBackColor="#a16eca"
+            app:AniForeColor="#894fd4"
+            app:CircleSmaller="6"
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/report_recycler"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        </exodiasolutions.buzz.Loader.CircleRefreshLayout>
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#ccc"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <exodiasolutions.buzz.Custom.TV_Muskan
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:onClick="ChatList"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:onClick="post"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <exodiasolutions.buzz.Custom.TV_Muskan
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Status"
+
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

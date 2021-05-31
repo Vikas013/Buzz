@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/back"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/space" />
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_weight="1"
+        android:src="@drawable/logo" />
+
+    <exodiasolutions.buzz.Custom.TV_normaltext
+        android:id="@+id/buzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TV_handwritting"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="@color/colorAccent"
+        android:text="BuZz"
+        android:textSize="30sp" />
+
+    <exodiasolutions.buzz.Custom.TV_handwritting
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="The social networking app"
+        android:textSize="20sp"
+        android:id="@+id/TV_handwritting" />
+
+
+</RelativeLayout>
